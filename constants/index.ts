@@ -15,3 +15,11 @@ export const FOOTER_LINKS = [
   {href: '/contact',key:'contact', label: 'Contact'},
   {href: '/instagram',key:'instagram', label: 'Instagram'}
 ]
+export const JOB_LIST = [
+  {href: '/',key:'design', title: 'UX/UI Design', desc: 'Website/App', image: './job-card-img.png'},
+  {href: '/',key:'development', title: 'Development', desc: 'Full-Stack', image: './job-card-img.png'},
+  {href: '/',key:'modeling', title: '3D Modeling', desc: 'Game/Film/Ads', image: './job-card-img.png'},
+  {href: '/',key:'animation', title: 'Animation', desc: 'Maya Workflow', image: './job-card-img.png'},
+  {href: '/',key:'environments', title: 'Environments', desc: 'Game/Film/Ads', image: './job-card-img.png'},
+  {href: '/',key:'rigging', title: 'Rigging', desc: 'Maya Workflow', image: './job-card-img.png'},
+]

@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --gray-on-light: rgba(245, 245, 250, 0.70);
+}
+
 * {
   margin: 0;
   padding: 0;
