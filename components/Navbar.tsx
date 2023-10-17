@@ -3,37 +3,42 @@ import React, { useState } from 'react'
 import Image  from 'next/image';
 import Link from 'next/link';
 import { NAV_LINKS } from '@/constants';
+import Button from './ui/Button';
+import LinkCard from './ui/LinkCard';
 
 const Navbar = () => {
   const [navbar,setNavbar] = useState(false);
+  console.log(navbar)
   return (
-    <nav className='sticky top-0 z-10 py-10  bg-white/10 backdrop-blur-3xl'>
-      <div className='mx-auto max-w-[1324px] px-4 flex items-center justify-between '>
-      <Link href='./' ><Image  src='./Logo.svg' alt='Yusp Studio' width={137} height={45} /></Link>
-      <ul className='hidden space-x-6 lg:flex lg:items-center'>
-        {NAV_LINKS.map((link) => (
-          <Link href={link.href} key={link.key} className='text-sm text-neutral-950 font-semibold tracking-tight cursor-pointer transition-all hover:text-blue-500'>{link.label}</Link>
-        ))}
-      <Link href='./contact' className='py-2.5 px-5 rounded-full bg-gray-100 cursor-pointer text-sm font-semibold tracking-tight'>Contact</Link>
-      </ul>
-      
-      <button className='inline-block cursor-pointer lg:hidden' onClick={() => setNavbar(!navbar)}>
-        {navbar? <Image src='./close.svg' alt='' width={24} height={24} /> : <Image src='./Menu.svg' alt='' width={24} height={24}/>}
-      </button>
-      {!navbar? '':(
-        <div className='absolute w-screen h-screen bg-white top-0 right-0 z-20 flex justify-center items-center'>
-        <div className='flex flex-col justify-center items-center gap-6'>
-          {NAV_LINKS.map((link) => (
-          <Link onClick={() => setNavbar(!navbar)} href={link.href} key={link.key} className='text-[26px]/[40px] font-bold'>{link.label}</Link>
-        ))}
-          <Link href='./contact' className='w-fit py-2.5 px-6 rounded-full bg-gray-100 cursor-pointer text-[18px]/[30px] font-bold tracking-tight'>Contact</Link>
-          <button className='inline-block cursor-pointer lg:hidden' onClick={() => setNavbar(!navbar)}>
-          <Image src='./close.svg' alt='' width={24} height={24} />
-          </button>
+    <nav className='p-7 flex justify-between relative'>
+      <Link href='./'><Image src='./Logo.svg' width={137} height={45} alt='Yusp Studio'/></Link>
+      <div className='flex gap-4'>
+        <Button style='hidden md:flex' title='Contact Us' link='./contact' icon='./arrow-right-top.svg' variant='light' />
+        <button className='p-4 rounded-full bg-gray-100 cursor-pointer' onClick={() => setNavbar(!navbar) }><Image src='./grid-fill.svg' alt='' width={24} height={24} /></button>
+      </div>
+      {navbar ? '': (
+        <div className='absolute top-0 right-0 bg-white p-4 w-screen h-screen flex flex-col justify-between'>
+          <div className='flex justify-between items-start h-1/6'>
+            <div className='tracking-tighter font-semibold text-3xl text-stone-950'>Menu.</div>
+            <button className='p-4 rounded-full bg-gray-100 cursor-pointer' onClick={() => setNavbar(!navbar) }><Image src='./asterisk-fill.png' alt='' width={24} height={24} /></button>
+          </div>
+          <div className='flex flex-col gap-2 h-full'>
+            <div className='flex gap-2 h-1/3'>
+              <LinkCard link='./about' title='About Yups' textColor='text-slate-800'/>
+              <LinkCard link='./work' title='Future Project' textColor='text-slate-800'/> 
+            </div>
+            <div className='flex gap-2 h-full'>
+              <div className=' w-1/2 h-full'>
+                <LinkCard link='./blog' title='Check Our Blog' textColor='text-slate-800'/>
+              </div>
+              <div className='flex flex-col gap-2 w-1/2 h-full'>
+                <LinkCard link='./process-work' title='Process Work' textColor='text-slate-800'/>
+                <LinkCard link='./contact' title='Our Contact' textColor='text-slate-800'/>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
       )}
-      </div>
     </nav>
   )
 }
