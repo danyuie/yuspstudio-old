@@ -13,6 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-pattern': "url('/image/hero-texture.png')",
+        'menu-about': "url('/image/menu-img-01.png')",
+        'menu-project': "url('/image/menu-img-02.png')",
+        'menu-blog': "url('/image/menu-img-03.png')",
       },
       colors: {
         'hero-card': '#F6F5F3',

@@ -13,7 +13,7 @@ const HeadingSection = ({title, titleSub, tag }:HeadingSectionProp) => {
       <div className='text-[18px]/[30px] text-sky-500 font-bold tracking-tight'>{tag}</div>
       <div className='flex justify-between items-center'>
         <div className='max-w-[880px] font-bold text-[20px]/[28px] text-gray-400 mt-3 '><span className='text-neutral-950'>{title}</span>{titleSub}</div> 
-        <Button style='hidden sm:visible' variant='light' title='Lets work together' link='./' icon='./arrow-right-white.svg'/>
+        <Button style='hidden sm:visible' title='Lets work together' link='./' icon='./arrow-right-white.svg'/>
       </div>
     </div>
   )

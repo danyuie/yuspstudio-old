@@ -12,7 +12,7 @@ type ButtonProps = {
 
 const Button = ({ title, icon, link, style}:ButtonProps) => {
   return (
-    <Link href={link} className={`flex items-center py-4 px-5 rounded-full bg-gray-100 cursor-pointer gap-8 ${style}`}>
+    <Link href={link} className={`flex items-center py-4 px-5 rounded-full cursor-pointer gap-8 ${style}`}>
       <label className='text-base font-semibold tracking-tighter cursor-pointer' >{title}</label>
       {icon && <Image src={icon} alt='' width={24} height={24} />}
     </Link>

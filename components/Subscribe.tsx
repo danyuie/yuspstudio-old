@@ -8,7 +8,7 @@ const Subscribe = () => {
         <div className='text-[30px]/[38px] md:text-5xl text-neutral-50  font-bold tracking-tight leading-[135%]'>Interested in working with us on your next project? <span className='hidden xl:block'>Write us an email or schedule a meeting.</span></div>
         <div className='hidden md:block text-[20px] text-gray-300 tracking-tight '>If you are interested in working with us on your next project, please contact us today.</div>
       </div>
-      <Button style='w-fit' variant='dark' title='Lets work together' icon='./arrow-right-dark.svg' link='./'/>
+      <Button style='w-fit' title='Lets work together' icon='./arrow-right-dark.svg' link='./'/>
     </div>
   )
 }
