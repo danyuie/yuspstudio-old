@@ -10,14 +10,14 @@ const Navbar = () => {
   const [navbar,setNavbar] = useState(false);
   console.log(navbar)
   return (
-    <nav className='p-7 flex justify-between relative'>
+    <nav className='p-7 flex justify-between relative items-center'>
       <Link href='./'><Image src='./Logo.svg' width={137} height={45} alt='Yusp Studio'/></Link>
       <div className='flex gap-4'>
-        <Button style='hidden md:flex' title='Contact Us' link='./contact' icon='./arrow-right-top.svg' variant='light' />
+        <Button style='hidden md:flex' title='Contact Us' link='./contact' icon='./arrow-right-top.svg' />
         <button className='p-4 rounded-full bg-gray-100 cursor-pointer' onClick={() => setNavbar(!navbar) }><Image src='./grid-fill.svg' alt='' width={24} height={24} /></button>
       </div>
-      {navbar ? '': (
-        <div className='absolute top-0 right-0 bg-white p-4 w-screen h-screen flex flex-col justify-between'>
+      {!navbar ? '': (
+        <div className='fixed top-0 right-0 bg-white p-4 w-screen h-screen flex flex-col justify-between z-10'>
           <div className='flex justify-between items-start h-1/6'>
             <div className='tracking-tighter font-semibold text-3xl text-stone-950'>Menu.</div>
             <button className='p-4 rounded-full bg-gray-100 cursor-pointer' onClick={() => setNavbar(!navbar) }><Image src='./asterisk-fill.png' alt='' width={24} height={24} /></button>

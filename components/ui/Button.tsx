@@ -3,7 +3,6 @@ import Link from 'next/link'
 import React from 'react'
 
 type ButtonProps = {
-  variant: 'dark'|'light',
   style?: string,
   title?: string,
   icon?: string,
@@ -11,7 +10,7 @@ type ButtonProps = {
 
 }
 
-const Button = ({variant, title, icon, link, style}:ButtonProps) => {
+const Button = ({ title, icon, link, style}:ButtonProps) => {
   return (
     <Link href={link} className={`flex items-center py-4 px-5 rounded-full bg-gray-100 cursor-pointer gap-8 ${style}`}>
       <label className='text-base font-semibold tracking-tighter cursor-pointer' >{title}</label>
