@@ -1,8 +1,9 @@
 import React from 'react'
+import HeroListCard from '@/components/ui/HeroListCard'
 
 const page = () => {
   return (
-    <div>About Page</div>
+    <div>about</div>
   )
 }
 

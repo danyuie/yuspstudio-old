@@ -17,7 +17,7 @@ const Navbar = () => {
         <Button style='hidden md:flex bg-gray-100' title='Contact Us' link='./contact' icon='./arrow-right-top.svg' />
         <button className='p-4 rounded-full bg-gray-100 cursor-pointer' onClick={() => setNavbar(!navbar) }><Image src='./grid-fill.svg' alt='' width={24} height={24} /></button>
       </div>
-      {navbar ? '': (
+      {!navbar ? '': (
         <div className='fixed top-0 right-0 bg-white p-4 w-screen h-screen flex flex-col justify-between z-10 pb-7 md:p-7'>
           <div className='flex justify-between items-start h-1/6'>
             <div className='tracking-tighter font-semibold text-3xl text-stone-950 md:text-5xl'>Menu.</div>

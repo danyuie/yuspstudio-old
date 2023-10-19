@@ -1,11 +1,51 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
 import Button from './ui/Button'
 import IconButton from './ui/IconButton'
-import HeroScrollCard from './ui/HeroScrollCard'
 import { SERVICES_HERO } from '@/constants'
+import HeroScrollCard from './ui/HeroScrollCard'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import { useRef } from 'react'
 
 const Hero = () => {
+  const slider:any = useRef(null)
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  };
+
+  
+  
   return (
     <div className='flex flex-col gap-4 md:grid md:grid-cols-2'>
       <div className='bg-hero-pattern bg-cover bg-center p-4 rounded-3xl flex flex-col gap-10 border-[3px] border-white md:justify-between md:p-8 '>
@@ -50,14 +90,16 @@ const Hero = () => {
           <div className='flex justify-between items-center'>
             <div className='text-gray-400 text-sm tracking-tight md:text-base'>Scroll to view all</div>
             <div className='flex gap-4'>
-              <IconButton icon='./arrow-left-dark.svg'  style='p-1' />
-              <IconButton icon='./arrow-right-dark.svg'  style='p-1' />
+              <div onClick={() => slider?.current?.slickPrev()} ><IconButton icon='./arrow-left-dark.svg'  style='p-1' /></div>
+              <div onClick={() => slider?.current?.slickNext()}><IconButton icon='./arrow-right-dark.svg'  style='p-1' /></div>
             </div>
           </div>
-          <div className='grid auto-cols-[80%] gap-2 grid-flow-col overflow-x-auto snap-mandatory snap-x md:auto-cols-[30%] no-scrollbar' >
-                {SERVICES_HERO.map((item) => (
-                    <HeroScrollCard  title={item.title} desc={item.desc} linkImage={item.image} key={item.key} />
-                ))}
+          <div className=''>
+            <Slider ref={slider} {...settings}  >
+                  {SERVICES_HERO.map((item ) => (
+                      <HeroScrollCard title={item.title} desc={item.desc} linkImage={item.image} key={item.key} />
+                  ))}
+            </Slider>
           </div>
         </div>
 
@@ -85,6 +127,7 @@ const Hero = () => {
         </div>
 
       </div>
+      
     </div>
   )
 }
