@@ -4,16 +4,19 @@ export const NAV_LINKS = [
   {href: '/blog',key:'blog', label: 'Blog'}
 ]
 export const SOCIAL_LINKS = [
-  {src: './facebook.svg', href: 'https://facebook.com/haidanghahaha',key:'facebook', label: 'Facebook'},
-  {src: './instagram.svg', href: 'https://instagram.com/_haidagn',key:'instagram', label: 'instagram'},
-  {src: './youtube.svg', href: 'https://youtube.com/doihoangha',key:'youtube', label: 'Youtube'}
+  {src: './sgv/facebook.svg', href: 'https://facebook.com/haidanghahaha',key:'facebook', label: 'Facebook'},
+  {src: './sgv/instagram.svg', href: 'https://instagram.com/_haidagn',key:'instagram', label: 'instagram'},
+  {src: './sgv/dribbble.svg', href: 'https://youtube.com/doihoangha',key:'dribbble', label: 'dribbble'},
+  {src: './sgv/behance.svg', href: 'https://youtube.com/doihoangha',key:'behance', label: 'behance'},
 ]
 
 export const FOOTER_LINKS = [
-  {href: '/privacy',key:'privacy', label: 'Privacy'},
-  {href: '/terms',key:'terms', label: 'Terms'},
-  {href: '/contact',key:'contact', label: 'Contact'},
-  {href: '/instagram',key:'instagram', label: 'Instagram'}
+  {href: '/about',key:'about', label: 'About'},
+  {href: '/workp-rocess',key:'workprocess', label: 'Work process'},
+  {href: '/project',key:'project', label: 'Project'},
+  {href: '/blog',key:'blog', label: 'Blog'},
+  {href: '/support',key:'support', label: 'Support'},
+  {href: '/contact',key:'contact', label: 'Contact'}
 ]
 export const JOB_LIST = [
   {href: '/',key:'design', title: 'UX/UI Design', desc: 'Website/App', image: './job-card-img.png'},

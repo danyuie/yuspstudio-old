@@ -6,7 +6,7 @@ import Work from "@/components/Work";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-[1864px] p-4">
+    <div className="mx-auto max-w-[1864px] px-4">
       <Hero />
       {/* <Hero />
       <Services />

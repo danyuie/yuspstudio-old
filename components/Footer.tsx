@@ -1,32 +1,30 @@
-import { FOOTER_LINKS, SOCIAL_LINKS } from '@/constants'
+import { SOCIAL_LINKS,FOOTER_LINKS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
   return (
-    // <footer className='flex flex-col items-center pt-20 md:pt-[128px] px-4 mx-auto max-w-[1324px]'>
-    //   <div className=' flex flex-col items-center max-w-[487px]'>
-    //     <Link href='./' ><Image  src='./Logo.svg' alt='Yusp Studio' width={137} height={45} /></Link>
-    //     <div className='font-normal text-[14px]/[22px] md:text-lg mt-8 mb-10 md:mb-[60px] text-center text-neutral-500'>We are your partner in turning your vision into reality. Let us show you the power of imagination.</div>
-    //     <div className='flex gap-4 md:gap-10 items-center mb-5 md:mb-10'>
-    //       {FOOTER_LINKS.map((link) => (
-    //         <Link className='text-[12px]/[20px] md:text-base font-medium text-neutral-400 tracking-tight' href={link.href} key={link.key}>{link.label}</Link>
-    //       ))}
-    //     </div>
-    //   </div>
-    //   <div className='w-full flex justify-between py-5 border-t border-gray-100'>
-    //     <div className='text-[12px]/[20px] md:text-base font-normal text-neutral-400'>© 2023 All rights reserved</div>
-    //     <div className='flex items-center gap-4'>
-    //       <div className='text-[12px]/[20px] md:text-base text-blue-500 font-bold tracking-tighter'>Follows Us</div>
-    //       {SOCIAL_LINKS.map((link) =>
-    //       (
-    //         <a className='hidden md:block' href={link.href} key={link.key} target="_blank" > <Image src={link.src} alt='' width={24} height={24} /></a>
-    //         ))}
-    //     </div>
-    //   </div>
-    // </footer>
-    <div>footer</div>
+    
+    <div className='mx-auto max-w-[1864px] mt-4 p-4 text-slate-950 text-xs md:text-base tracking-tight'>
+      <div className='flex justify-between mb-4 lg:mb-6'>
+        <div className="flex gap-2 items-center">
+          {SOCIAL_LINKS.map((link) => (
+            <a className='h-fit rounded-full border border-slate-300 md:p-2' href={link.href} key={link.key}><Image alt='' src={link.src} width={0} height={0} className='w-6 h-6'/></a>
+            ))}
+        </div>
+        <div className="hidden lg:flex gap-6 mr-20 items-center">
+          {FOOTER_LINKS.map((item)=>(
+            <Link key={item.key} href={item.href} >{item.label}</Link>
+          ))}
+        </div>
+        <div className="h-fit py-2 px-4 bg-gray-100 rounded-full">Our resume</div>
+      </div>
+      <div className='flex justify-between items-center'>
+        <Link href='./privacy-and-policy'>Privacy and Policy</Link>
+        <div>All right are reserved © <b>Yusp Studio</b></div>
+      </div>
+    </div>
   )
 }
 
