@@ -47,7 +47,7 @@ const Hero = () => {
   
   
   return (
-    <div className='flex flex-col gap-4 md:grid md:grid-cols-2'>
+    <div className='flex flex-col gap-4 md:grid md:grid-cols-2 max-w-[1864px] m-auto px-4'>
       <div className='bg-hero-pattern bg-cover bg-center p-4 rounded-3xl flex flex-col gap-10 border-[3px] border-white md:justify-between md:p-8 '>
         <div className='flex justify-between items-start'>
           <div className='text-3xl max-w-[80%] font-bold tracking-tighter text-slate-50 md:text-[80px]/[1.2] md:max-w-[80%]'>We help you make your <span className='rounded-full border-2 px-2 md:px-4 '>Dream</span></div>
@@ -66,7 +66,7 @@ const Hero = () => {
           <div className='text-2xl font-bold text-slate-950 mb-4 md:text-4xl md:mb-8'>We are ready / <span className='text-4xl text-green-500'>Available Here</span></div>
           <div className='flex justify-between items-center'>
             <div className='flex'>
-              <div className='rounded-full overflow-hidden w-10 h-10 md:w-14 md:h-14'><Image src='./image/user-0.png' alt='' width={56} height={56} /></div>
+              <Button type='icon-md' icon='ArrowTopRight'/>
               <div className='rounded-full overflow-hidden w-10 h-10 ml-[-18px] md:ml-[-30px] md:w-14 md:h-14'><Image src='./image/user-1.png' alt='' width={56} height={56} /></div>
             </div>
             <div className='bg-white/30 h-10 w-10 rounded-full p-[10px] flex justify-center flex-col items-center md:w-14 md:h-14'><div className='text-[10px]/[1] md:text-xs'>50%</div ><div className='text-sm font-semibold md:text-base'>OFF</div></div>
@@ -82,7 +82,7 @@ const Hero = () => {
           </div>
           <div className='flex gap-6 flex-col border-[3px] border-white bg-blue-50 rounded-3xl p-4 md:p-6 justify-center'>
               <div className='text-5xl font-bold tracking-tighter'>Join our community.</div>
-              <Button link='./comunnity' title='Join Community' style='bg-blue-600 text-slate-50 w-fit' icon='./arrow-right-top-light.svg' />
+              <Button blank='https://www.facebook.com/' type='md' title='Join community' style='bg-blue-600 text-slate-50' icon='ArrowTopRight' link='./community'/>
           </div>
         </div>
 
@@ -90,8 +90,8 @@ const Hero = () => {
           <div className='flex justify-between items-center'>
             <div className='text-gray-400 text-sm tracking-tight md:text-base'>Scroll to view all</div>
             <div className='flex gap-4'>
-              <div onClick={() => slider?.current?.slickPrev()} ><IconButton icon='./arrow-left-dark.svg'  style='p-1' /></div>
-              <div onClick={() => slider?.current?.slickNext()}><IconButton icon='./arrow-right-dark.svg'  style='p-1' /></div>
+              <div onClick={() => slider?.current?.slickPrev()} ><Button type='icon-sm' icon='ArrowLeftShort'/></div>
+              <div onClick={() => slider?.current?.slickNext()}><Button type='icon-sm' icon='ArrowRightShort'/></div>
             </div>
           </div>
           <div className=''>
@@ -107,7 +107,7 @@ const Hero = () => {
           <div className='flex gap-10 flex-col border-[3px] border-white bg-hero-card rounded-3xl p-4 md:p-6'>
             <div className=' flex justify-between items-center'>
               <div className='bg-blue-700/10 text-blue-700 text-sm capitalize font-semibold rounded-full w-fit h-fit py-1 px-4 md:py-2 md:px-4'>social</div>
-              <IconButton icon='./arrow-right-dark.svg'  style='p-1' />
+              <Button type='icon-sm' icon='ArrowRightShort'/>
             </div>
             <div className='flex items-end gap-2'>
               <div className='text-xs tracking-tight text-gray-400 h-fit mb-1 md:text-sm'>Follow us on social networks to see our next projects.</div>
@@ -117,7 +117,7 @@ const Hero = () => {
           <div className='flex gap-10 flex-col border-[3px] border-white bg-blue-700 rounded-3xl p-4 md:p-6 text-slate-50'>
             <div className=' flex justify-between items-center'>
               <div className='bg-slate-50/10 text-slate-50 text-sm capitalize font-semibold rounded-full w-fit h-fit py-1 px-4 md:py-2 md:px-4'>Team</div>
-              <IconButton icon='./arrow-right-dark.svg'  style='p-1' />
+              <Button type='icon-sm' icon='ArrowRightShort'/>
             </div>
             <div className='flex items-end gap-2'>
               <div className='text-xs tracking-tight text-gray-300 h-fit mb-1 md:text-sm'>We have 140+ project about 3d and UI/UX Website/App.</div>

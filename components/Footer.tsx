@@ -2,11 +2,12 @@ import { SOCIAL_LINKS,FOOTER_LINKS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Button from './ui/Button'
 
 const Footer = () => {
   return (
     
-    <div className='mx-auto max-w-[1864px] mt-4 p-4 text-slate-950 text-xs md:text-base tracking-tight'>
+    <div className='mx-auto max-w-[1864px] mt-16 p-4 text-slate-950 text-xs md:text-base tracking-tight'>
       <div className='flex justify-between mb-4 lg:mb-6'>
         <div className="flex gap-2 items-center">
           {SOCIAL_LINKS.map((link) => (
@@ -18,7 +19,7 @@ const Footer = () => {
             <Link key={item.key} href={item.href} >{item.label}</Link>
           ))}
         </div>
-        <div className="h-fit py-2 px-4 bg-gray-100 rounded-full">Our resume</div>
+        <Button router link='./resume' type='xs' title='Our resume'/>
       </div>
       <div className='flex justify-between items-center'>
         <Link href='./privacy-and-policy'>Privacy and Policy</Link>

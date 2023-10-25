@@ -1,18 +1,12 @@
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Subscribe from "@/components/Subscribe";
-import Whatwedo from "@/components/Whatwedo";
 import Work from "@/components/Work";
 
+// max-w-[1864px]
 export default function Home() {
   return (
-    <div className="mx-auto max-w-[1864px] px-4">
+    <div className="mx-auto">
       <Hero />
-      {/* <Hero />
-      <Services />
       <Work />
-      <Whatwedo />
-      <Subscribe /> */}
     </div>
   )
 }

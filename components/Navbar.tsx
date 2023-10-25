@@ -14,8 +14,8 @@ const Navbar = () => {
     <nav className='p-7 flex justify-between relative items-center mx-auto max-w-[1864px] px-4'>
       <Link href='./'><Image src='./Logo.svg' width={137} height={45} alt='Yusp Studio'/></Link>
       <div className='flex gap-4'>
-        <Button style='hidden md:flex bg-gray-100' title='Contact Us' link='./contact' icon='./arrow-right-top.svg' />
-        <div onClick={() => setNavbar(!navbar) }><Button style='bg-gray-100 gap-[16px]' title='Menu' icon='./grid-fill.svg' link='#'/></div>
+        <Button router type='md' link='./contact' title='Contact Us' icon='ArrowTopRight'/>
+        <div onClick={() => setNavbar(!navbar) }><Button type='icon-md' style='bg-gray-100' link='./' icon='Layout'/></div>
 
       </div>
       {!navbar ? '': (
