@@ -1,8 +1,21 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import WorkCard from './ui/WorkCard'
 import Button from './ui/Button'
+import { getProject } from '@/services'
 
 const Work = () => {
+  const [projectList, setProjectList] = useState<any>([]) 
+
+  useEffect(()=>{
+    getStaticProps();
+  },[])
+
+  const getStaticProps = async () => {
+    const project:any = (await getProject()) || []
+    setProjectList(project?.projectsConnection.edges)
+    // console.log(project.projectsConnection.edges)
+  }
   return (
     <div className=' max-w-[1864px] m-auto px-4 mt-16'>
       <div className='flex justify-between items-center mb-10'>
