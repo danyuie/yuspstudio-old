@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Navbar from './../components/Navbar';
 import Footer from './../components/Footer';
+import Providers from './providers';
 
 
 export const metadata: Metadata = {
@@ -16,12 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-gray-200 no-scrollbar'>
-        <Navbar />
-        <main className='relative overflow-hidden '>
-          {children}
-        </main>
-        <Footer />
+      <body className='bg-gray-200 no-scrollbar dark:bg-neutral-950'>
+        <Providers>
+          <Navbar />
+          <main className='relative overflow-hidden '>
+            {children}
+          </main>
+          <Footer />
+        </Providers>
         </body>
     </html>
   )

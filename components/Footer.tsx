@@ -7,11 +7,11 @@ import Button from './ui/Button'
 const Footer = () => {
   return (
     
-    <div className='mx-auto max-w-[1864px] mt-16 p-4 text-slate-950 text-xs md:text-base tracking-tight'>
+    <div className='mx-auto max-w-[1864px] mt-16 p-4 text-slate-950 text-xs md:text-base tracking-tight dark:text-slate-50'>
       <div className='flex justify-between mb-4 lg:mb-6'>
         <div className="flex gap-2 items-center">
           {SOCIAL_LINKS.map((link) => (
-            <a className='h-fit rounded-full border border-slate-300 md:p-2' href={link.href} key={link.key}><Image alt='' src={link.src} width={0} height={0} className='w-6 h-6'/></a>
+            <a className='h-fit rounded-full border border-slate-300 md:p-2 dark:border-neutral-900' href={link.href} key={link.key}><Image alt='' src={link.src} width={0} height={0} className='w-6 h-6'/></a>
             ))}
         </div>
         <div className="hidden lg:flex gap-6 mr-20 items-center">

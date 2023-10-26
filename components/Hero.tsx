@@ -48,7 +48,7 @@ const Hero = () => {
   
   return (
     <div className='flex flex-col gap-4 md:grid md:grid-cols-2 max-w-[1864px] m-auto px-4'>
-      <div className='bg-hero-pattern bg-cover bg-center p-4 rounded-3xl flex flex-col gap-10 border-[3px] border-white md:justify-between md:p-8 '>
+      <div className='bg-hero-pattern bg-cover bg-center p-4 rounded-3xl flex flex-col gap-10 border-[3px] border-white md:justify-between md:p-8 dark:border-neutral-800'>
         <div className='flex justify-between items-start'>
           <div className='text-3xl max-w-[80%] font-bold tracking-tighter text-slate-50 md:text-[80px]/[1.2] md:max-w-[80%]'>We help you make your <span className='rounded-full border-2 px-2 md:px-4 '>Dream</span></div>
           <IconButton iconStyle='w-5 h-5' style='p-3' />
@@ -76,22 +76,22 @@ const Hero = () => {
       </div>
       <div className='flex flex-col gap-4'>
         <div className='flex flex-col gap-4 md:grid md:grid-cols-2'>
-          <div className='flex gap-4 flex-col border-[3px] border-white bg-hero-card rounded-3xl p-4 justify-center md:p-6'>
+          <div className='flex gap-4 flex-col border-[3px] border-white bg-hero-card rounded-3xl p-4 justify-center md:p-6 dark:bg-neutral-900 dark:border-neutral-800'>
             <div className='text-sm font-bold tracking-tight '>National 3D Design Studio</div>
-            <div className='text-sm md:text-base'>Yusp is a <b>creative studio</b> dedicated to creating immersive digital experiences, from UI/UX design to 3D animation and more. Founded in 2021 by two passionate artists, <b>Dan (UI Designer)</b> and <b>Yuki (3D Artist)</b>, Yusp is dedicated to using technology to enhance creativity and turn visions into reality. </div>
+            <div className='text-sm md:text-base dark:text-neutral-300'>Yusp is a <b>creative studio</b> dedicated to creating immersive digital experiences, from UI/UX design to 3D animation and more. Founded in 2021 by two passionate artists, <b>Dan (UI Designer)</b> and <b>Yuki (3D Artist)</b>, Yusp is dedicated to using technology to enhance creativity and turn visions into reality. </div>
           </div>
-          <div className='flex gap-6 flex-col border-[3px] border-white bg-blue-50 rounded-3xl p-4 md:p-6 justify-center'>
+          <div className='flex gap-6 flex-col border-[3px] border-white bg-blue-50 rounded-3xl p-4 md:p-6 justify-center dark:bg-neutral-900 dark:border-neutral-800'>
               <div className='text-5xl font-bold tracking-tighter'>Join our community.</div>
-              <Button blank='https://www.facebook.com/' type='md' title='Join community' style='bg-blue-600 text-slate-50' icon='ArrowTopRight' link='./community'/>
+              <Button blank='https://www.facebook.com/' type='md' title='Join community' iconStyle="dark:text-blue-700" style='bg-blue-600 text-slate-50 dark:bg-blue-800/30 dark:text-blue-700' icon='ArrowTopRight' link='./community' />
           </div>
         </div>
 
-        <div className='bg-hero-card bg-cover bg-center p-4 rounded-3xl flex flex-col gap-4 border-[3px] border-white'>
+        <div className='bg-hero-card bg-cover bg-center p-4 rounded-3xl flex flex-col gap-4 border-[3px] border-white dark:bg-neutral-900 dark:border-neutral-800'>
           <div className='flex justify-between items-center'>
-            <div className='text-gray-400 text-sm tracking-tight md:text-base'>Scroll to view all</div>
+            <div className='text-gray-400 text-sm tracking-tight md:text-base dark:text-neutral-400'>Scroll to view all</div>
             <div className='flex gap-4'>
-              <div onClick={() => slider?.current?.slickPrev()} ><Button type='icon-sm' icon='ArrowLeftShort'/></div>
-              <div onClick={() => slider?.current?.slickNext()}><Button type='icon-sm' icon='ArrowRightShort'/></div>
+              <div onClick={() => slider?.current?.slickPrev()} ><Button style="dark:bg-neutral-800" type='icon-sm' icon='ArrowLeftShort'/></div>
+              <div onClick={() => slider?.current?.slickNext()}><Button style="dark:bg-neutral-800" type='icon-sm' icon='ArrowRightShort'/></div>
             </div>
           </div>
           <div className=''>
@@ -104,20 +104,20 @@ const Hero = () => {
         </div>
 
         <div className='flex flex-col gap-4 md:grid md:grid-cols-2'>
-          <div className='flex gap-10 flex-col border-[3px] border-white bg-hero-card rounded-3xl p-4 md:p-6'>
+          <div className='flex gap-10 flex-col border-[3px] border-white bg-hero-card rounded-3xl p-4 md:p-6 dark:bg-neutral-900 dark:border-neutral-800'>
             <div className=' flex justify-between items-center'>
               <div className='bg-blue-700/10 text-blue-700 text-sm capitalize font-semibold rounded-full w-fit h-fit py-1 px-4 md:py-2 md:px-4'>social</div>
-              <Button type='icon-sm' icon='ArrowRightShort'/>
+              <Button style='dark:bg-neutral-800' type='icon-sm' icon='ArrowRightShort'/>
             </div>
             <div className='flex items-end gap-2'>
               <div className='text-xs tracking-tight text-gray-400 h-fit mb-1 md:text-sm'>Follow us on social networks to see our next projects.</div>
               <div className='text-5xl font-bold tracking-tighter md:text-6xl'>+150K</div>
             </div>
           </div>
-          <div className='flex gap-10 flex-col border-[3px] border-white bg-blue-700 rounded-3xl p-4 md:p-6 text-slate-50'>
+          <div className='flex gap-10 flex-col border-[3px] border-white bg-blue-700 rounded-3xl p-4 md:p-6 text-slate-50 dark:bg-blue-700/20 dark:border-neutral-800'>
             <div className=' flex justify-between items-center'>
               <div className='bg-slate-50/10 text-slate-50 text-sm capitalize font-semibold rounded-full w-fit h-fit py-1 px-4 md:py-2 md:px-4'>Team</div>
-              <Button type='icon-sm' icon='ArrowRightShort'/>
+              <Button style="dark:bg-neutral-700/50" type='icon-sm' icon='ArrowRightShort'/>
             </div>
             <div className='flex items-end gap-2'>
               <div className='text-xs tracking-tight text-gray-300 h-fit mb-1 md:text-sm'>We have 140+ project about 3d and UI/UX Website/App.</div>
