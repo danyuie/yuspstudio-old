@@ -19,23 +19,8 @@ export const getProject = async () => {
               name
               slug
             }
-          }
-        }
-      }
-    }
-  `
-  const result = await request(graphqlAPI, query)
-  return result
-}
-
-export const getQuestion = async () => {
-  const query = gql`
-    query Assets {
-      questionsConnection {
-        edges {
-          node {
-            title
-            answer
+            excerpt
+            featuredProject
           }
         }
       }
