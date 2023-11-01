@@ -7,7 +7,7 @@ import Button from './ui/Button'
 const Footer = () => {
   return (
     
-    <div className='mx-auto max-w-[1864px] mt-16 p-4 text-slate-950 text-xs md:text-base tracking-tight dark:text-slate-50'>
+    <div className='mx-auto max-w-[1864px] md:mt-16 mt-10 p-4 text-slate-950 text-xs md:text-base tracking-tight dark:text-slate-50'>
       <div className='flex justify-between mb-4 lg:mb-6'>
         <div className="flex gap-2 items-center">
           {SOCIAL_LINKS.map((link) => (

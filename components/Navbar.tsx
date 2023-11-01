@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import Image  from 'next/image';
 import Link from 'next/link';
 import Button from './ui/Button';
 import LinkCard from './ui/LinkCard';
@@ -18,14 +17,14 @@ const Navbar = () => {
       <div className='flex gap-4'>
         <ThemeSwitcher />
         <Button style="hidden md:flex" router type='md' link='./contact' title='Contact Us' icon='ArrowTopRight' />
-        <div  onClick={() => setNavbar(!navbar) }><Button type='icon-md' style='bg-gray-100' icon='Layout'/></div>
+        <div  onClick={() => setNavbar(!navbar) }><Button link='' type='icon-md' style='bg-gray-100' icon='Layout'/></div>
 
       </div>
       {!navbar ? '': (
         <div className='fixed top-0 right-0 bg-white p-4 w-screen h-screen flex flex-col justify-between z-10 pb-7 md:p-7 dark:bg-neutral-900 dark:border-neutral-800'>
           <div className='flex justify-between items-start h-1/6'>
             <div className='tracking-tighter font-semibold text-4xl text-stone-950 md:text-5xl h-full items-center flex md:block dark:text-slate-50'>Menu.</div>
-            <div onClick={() => setNavbar(!navbar) }><Button type='icon-md' style='bg-gray-100 dark:bg-neutral-800' icon='Layout'/></div>
+            <div onClick={() => setNavbar(!navbar) }><Button link='' type='icon-md' style='bg-gray-100 dark:bg-neutral-800' icon='Layout'/></div>
           </div>
           <div className='flex flex-col gap-2 h-full md:gap-4'>
             <div className='flex gap-2 h-1/3 md:gap-4'>
