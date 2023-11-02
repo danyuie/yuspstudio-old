@@ -4,10 +4,10 @@ export const NAV_LINKS = [
   {href: '/blog',key:'blog', label: 'Blog'}
 ]
 export const SOCIAL_LINKS = [
-  {src: './sgv/facebook.svg', href: 'https://facebook.com/haidanghahaha',key:'facebook', label: 'Facebook'},
-  {src: './sgv/instagram.svg', href: 'https://instagram.com/_haidagn',key:'instagram', label: 'instagram'},
-  {src: './sgv/dribbble.svg', href: 'https://youtube.com/doihoangha',key:'dribbble', label: 'dribbble'},
-  {src: './sgv/behance.svg', href: 'https://youtube.com/doihoangha',key:'behance', label: 'behance'},
+  {src: '/sgv/facebook.svg', href: 'https://facebook.com/haidanghahaha',key:'facebook', label: 'Facebook'},
+  {src: '/sgv/instagram.svg', href: 'https://instagram.com/_haidagn',key:'instagram', label: 'instagram'},
+  {src: '/sgv/dribbble.svg', href: 'https://youtube.com/doihoangha',key:'dribbble', label: 'dribbble'},
+  {src: '/sgv/behance.svg', href: 'https://youtube.com/doihoangha',key:'behance', label: 'behance'},
 ]
 
 export const FOOTER_LINKS = [

@@ -29,3 +29,19 @@ export const getProject = async () => {
   const result = await request(graphqlAPI, query)
   return result
 }
+export const getProjectDetails = async (slug:any) => {
+  const query = gql`
+    query GetProjectDetails($slug: String!) {
+      project(where: {slug: $slug}) {
+        image {
+          url
+        }
+        createdAt
+        name
+        slug
+      }
+    }
+`
+  const result = await request(graphqlAPI, query, {slug})
+  return result
+}
