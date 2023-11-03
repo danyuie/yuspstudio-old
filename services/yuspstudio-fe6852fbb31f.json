@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "yuspstudio",
+  "private_key_id": "fe6852fbb31f4d874e264e0ee4396c61833f5fee",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCjBe/cANWbZpWu\neqnEZ3so/IGf6jOADaWHdkUwpZ7JXs+KcEo4Gg+rQmxoGFIkHtOOCi3q3zSC++F8\nrG9qyKhS4HSphx1bby+bvAoBkd+GnM3ZKJzltWu9Yu3AaNtDz9mE/J5oB95wxgjk\nYHEleXRlXH2syQwMhOCWZmtBSlt7YAZ8fnNlNkDCubf9XT1csYOpOMAxNEi7gKeL\nFEbZe6uESUy6e4alBU3fFbx86bpCyPVhYkJgZ06yod4CmhDcEfKAzHN+Ene1VOw6\nmTdeYxg3do+lGvn9WJrraW9vK6hQDAPmjB9PDl88P+YfWo1WCJjTDKQPt/0x5EGO\ndrRpmPsVAgMBAAECggEAB7CHkpEu7+hK+uBXwDl3oU248Bw68oJW2XsK0Lx4U6VJ\np2h3rFM0FkpbXdULR2iZ+SMPyEOpAyZgZSs5C1GxHbsTyjq+U1NYkWXV85Alwtvf\nddBf4sjHyltBz/V0gRlY5fzRnJAF4rwtvlbWzSfbl84XxJ31YRuBt1HX/rmx4PrX\nWvZlW3OEe0f6/qHG9VtCbpVMrLziPuD3dElBzEcaFad7qdzyehyCOhNtCe2i1na4\nma8JX+og+LDRRgvN7xniK1LZiqMwLPRh+rPets1eO3tFcEZn6chuBD1zmiYxW3on\nwkRLxDcqqFygOMGvvCbYsmHtgXytFARvQHtuYhHQLQKBgQDe7Cf7WlMad3bNi4En\nLLcYKhxSci6ulLSGp8pib3sPZ6MLaOjiwlDo8fItVmjiW0kOYUEbAr+Riy26QA8C\nBMn6vywaEFbK63tWLz9YJrKdKE+yxbUqsugZHnD/461xYcwEKrXFVen6k1wLZ3lv\nEIhHYuwecs7osmanvMyerX7A6wKBgQC7NnhlXO4oUmR0wGvWX9+nN9GvmnqDL0Ac\nVflCrrXYulafGAy58dA6H11LWByffP2hqfl1J8XhbfUMNHPZI2njGFGRxb0lRSwM\n08WmEWMkVJo3eP53dRhyFOWFHwxN3KCfaREQPR0m0EAScZcW8zIYepe2J5KKYPYD\nUYHcTbgz/wKBgQCa0JMrwpz4QoMlWH8Hf8xgYc5ti5LT974vzhOFrTpfhm/7Go6x\n/JVIUc8IoXwRx6fC7tPSOGRmZawKLza9Bipnk6DDMRm1rzhmsEVjqOxerII8+4VH\n9BuwZi2/6JSpq2uOcULvmyz1sqU33lK9SVP7j72/n6gGfu9ACqRohsECpQKBgB4r\nI/GprRNAW8HYtEgCgScQPrEeorl7JsiqLhXJ07IOLSFMHdjlF9oV7dHTbCFjYffo\nTTPM6f1u27tQxI5sP4cCBzsHc3iLEhMrGUGusZxMKeHglJkpfHv91BLEsxXlBNlL\ndB16y7TSgFC4j1F6dUsujj4jWGEGSP615shameF/AoGBAIQ6bZncivTkVkS9fNlq\nfWDNnUd2GwR5KwCpyio83S1WaVhHH/8ld3A/gLSdoclbI9mAFKsM+Zmv5AwBlFbR\nsIb+nmLLywaV5PC1rOU+GSxbtupMUHfEFbNWqHGey2vbTlNnyUePwmJm+GNON3CR\nAk2MxH2js+rILFECqvF9BLDY\n-----END PRIVATE KEY-----\n",
+  "client_email": "yuspstudiosheets@yuspstudio.iam.gserviceaccount.com",
+  "client_id": "107920086888934428812",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/yuspstudiosheets%40yuspstudio.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
